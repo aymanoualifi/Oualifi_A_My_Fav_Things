@@ -1,0 +1,20 @@
+{
+    "favthing1": {
+        "title": "soccer",
+        "banner": "together forever.",
+        "description": "dima wydad",
+        "photo": "painting.jpg"
+    },
+    "favthing2": {
+        "title": "film direction",
+        "banner": "“Basically, I am afraid of everything in life, except filmmaking.”  - Lars Von Trier.",
+        "description": "",
+        "photo": "dancing.jpg"
+    },
+    "favthing3": {
+        "title": "design",
+        "banner": "everything you can imagine is real.",
+        "description": "",
+        "photo": "badminton.jpg"
+    }
+}

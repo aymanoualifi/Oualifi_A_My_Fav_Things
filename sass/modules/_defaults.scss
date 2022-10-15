@@ -1,0 +1,15 @@
+// body {
+//     background-color: $main-bg;
+//     color: $main-colour;
+//     font-size: $main-size;
+//     // more generic rules here
+// }
+body {
+    background-color: rgb(249, 245, 204);
+    // font-family: 'Cabin Sketch', cursive;
+    text-align: center;
+    align-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
