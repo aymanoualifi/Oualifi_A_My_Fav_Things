@@ -13,7 +13,7 @@
 1. Choose my three favourite things
 2. Build a web page using HTML/SASS
 3. Create the JSON object that includes my 3 favourite things
-4. Build JS (Popover, Slider)
+4. Build JS (Popover, lightbox)
 5. Push all folders and files to the GitHub
 
 ## Technologies
