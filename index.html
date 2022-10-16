@@ -1,31 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/main.css">
-    <title>my Favourite Things</title>
-
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Favourite Things</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 
+<div class="header">
+  <h4><span class="title">My 3 Fav Things</span></h4>
+  <h5 id="dynamic" class="lg-text"></h5>
+  <h5 class="my-name">By Ayman Oualifi</h5>
+</div>
+
 <body>
-    <main class="main">
-        <section class="header">
-            <h1>My Favourite Things</h1>
+  <div id="all-favorite">
+    <section id="intro-section">
+      <div>
+        <H2>click the ball to see my fav things</H2>
+      </div>
+  </section>
+
+      <section id="fav-things">
+        <nav id="slideButton">
+          <div class="button"><img src="images/ball.png" alt="ball"></div>
+        </nav>
         </section>
-
-<section>
-    <mdb-popover trigger="click" :options="{placement: 'right'}">
-    <span slot="header">popover on right</span>
-    <span slot="body">Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</span>
-    <mdb-btn slot="reference">
-      Popover on right
-    </mdb-btn>
-  </mdb-popover>
-</section>
-</main>
-
-    <script src="js/main.js" defer type="module"></script>
+          </div>
+    
+      <div>
+        <section id="popinfo" class="popover">
+          <button type="button" class="btn_close">X</button>
+          <section id="love-section"></section>
+        </section>
+          <template id="bio-template">
+              <section class="bio-desc">
+                  <div class="pic">
+                    <img src="images/ball.jpg" alt="prog image">
+                  </div>
+                  <h2 class="s_title">slug</h2>
+                  <h3 class="s_singer">slug</h3>
+                  <p class="s_description">slug</p>
+              </section>
+          </template>
+      </div>
+  
+  <script src="js/main.js" type="module" defer></script>
 </body>
+
 </html>

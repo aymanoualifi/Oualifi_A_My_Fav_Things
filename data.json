@@ -2,19 +2,19 @@
     "favthing1": {
         "title": "soccer",
         "banner": "together forever.",
-        "description": "dima wydad",
-        "photo": "painting.jpg"
+        "pic": "soccer.jpg",
+        "description": "glory glory man united!"
     },
     "favthing2": {
         "title": "film direction",
         "banner": "“Basically, I am afraid of everything in life, except filmmaking.”  - Lars Von Trier.",
-        "description": "",
-        "photo": "dancing.jpg"
+        "pic": "film.jpg",
+        "description": "my life dream"
     },
     "favthing3": {
         "title": "design",
         "banner": "everything you can imagine is real.",
-        "description": "",
-        "photo": "badminton.jpg"
+        "pic": "graphic-des.png",
+        "description": "my third fav thing in the world"
     }
 }

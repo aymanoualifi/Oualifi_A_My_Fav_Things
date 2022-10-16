@@ -1,72 +1,81 @@
+
+import { getData } from "./modules/dataMiner.js";
+//imports always go at the top the file
+//this is called a IIFE
+
 (() => {
 
-  
-    const button = document.querySelectorAll(".button");
-    let favpanel;
+  // homepage
+  let targetText = document.querySelector('#dynamic'),
+      noLanding = document.querySelector('.header');
 
-    // using get data and show data  and build using fetch API
+  function noLandingPage() {
+    noLanding.classList.add('home');
+  }
 
-    function buildData(data) {
-        let favpanel = Object(data);
+  noLanding.addEventListener('click', noLandingPage);
+
+  // popover
+  function randomString() {
+    let stringArr = [ 'soccer', 'film direction', 'design'],
+        selectString = stringArr[Math.floor(Math.random() * stringArr.length)],
+        selectStringArr = selectString.split('');
+
+    return selectStringArr;
+  }
+
+ 
+
+  let theSongs = document.querySelector('#love-section'),
+      theTemplate = document.querySelector('#bio-template').content,
+      faveData;
+
+  function buildThings(data) {
+
+    faveData = data;
+
+    const things = Object.keys(data);
+    // Object.keys creats an array
+
+    things.forEach (thing => {
+
+      let panel = theTemplate.cloneNode(true);
+      let containers = panel.firstElementChild.children;
+
+      containers[0].querySelector('img').src= `images/${data[thing].pict}`;
+      containers[0].querySelector('img').id = thing;
+      containers[0].querySelector('img').addEventListener("click", showThing);
+
+      containers[1].textContent = data[thing].title;
+      containers[2].textContent = data[thing].singer;
+      containers[3].textContent = data[thing].description;
+
+      theSongs.appendChild(panel);
+    })
+
+  }
+
+  function showThing() {
+
+    let currentThing = faveData[this.id]; 
+    // this retrieves the object that matches the key we saved
+
+  }
+
+  getData(`./data.json`, buildThings);
+
+  window.onload = function() {
+    function onClick() {
+      document.querySelector('.popover').style.display = 'block';
     }
 
-
-    function getData() {
-        fetch("./data.json")
-            .then(res => res.json())
-            .then(data => {
-
-                favpanel = data;
-
-            })
-
-        // for catching the error
-        .catch(error => console.error(error));
+    function offClick() {
+      document.querySelector('.popover').style.display = 'none';
     }
 
-    //debugger;
+    document.querySelector('.button').addEventListener('click', onClick);
+    document.querySelector('.btn_close').addEventListener('click', offClick);
+  }
 
-    function showData(event) {
-
-        let key = event.target.dataset.list;
-        console.log(key);
-
-        buildData();
-        console.log(favpanel);
-
-        // classifying json objects
-
-        let fvrtthingTitle = document.querySelector("h2"),
-            fvrtthingSubTitle = document.querySelector("h3"),
-            fvrtthingDesc = document.querySelector("p"),
-            fvrtthingImg = document.querySelector("img");
-
-        // debugger;
-
-        fvrtthingImg.src = `images/${favpanel[key].photo}`;
-        fvrtthingTitle.textContent = favpanel[key].title;
-        //debugger;
-        fvrtthingSubTitle.textContent = favpanel[key].banner;
-        fvrtthingDesc.textContent = favpanel[key].brief;
-
-    }
-
-    $(document).ready(function(){
-        $('[data-toggle="popover"]').popover({
-            placement : 'top',
-            trigger : 'hover',
-            html : true,
-            content : '<div class="media"><img src="/examples/images/avatar-tiny.jpg" class="mr-3" alt="Sample Image"><div class="media-body"><h5 class="media-heading">Jhon Carter</h5><p>Excellent Bootstrap popover! I really love it.</p></div></div>'
-        });
-    }); 
-
-    getData();
-
-    // buttonContainer.addEventListener('click', showData),
-
-    // for button functionality
-
-
-    button.forEach(button => button.addEventListener("click", showData));
 
 })();
