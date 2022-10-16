@@ -2,19 +2,19 @@
     "favthing1": {
         "title": "soccer",
         "banner": "together forever.",
-        "pic": "soccer.jpg",
-        "description": "glory glory man united!"
+        "pic": "soccer.JPG",
+        "description": "glory glory man united!  i love football... i mean soccer. i used to play soccer 7 days a week, unfortunately i don't play it anymore (life), but i make sure to never miss a game of manchester united and wydad athletic club (my 2 fav teams)."
     },
     "favthing2": {
         "title": "film direction",
         "banner": "“Basically, I am afraid of everything in life, except filmmaking.”  - Lars Von Trier.",
-        "pic": "film.jpg",
-        "description": "my life dream"
+        "pic": "film.JPG",
+        "description": "my life dream. i always wanted to make my movies and it's always been a dream of mine to be a film director."
     },
     "favthing3": {
-        "title": "design",
+        "title": "graphic design",
         "banner": "everything you can imagine is real.",
-        "pic": "graphic-des.png",
-        "description": "my third fav thing in the world"
+        "pic": "graphic-des.PNG",
+        "description": "i love creating stuff. i also enjoy the process of making a design. "
     }
 }

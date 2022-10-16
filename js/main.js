@@ -15,17 +15,6 @@ import { getData } from "./modules/dataMiner.js";
 
   noLanding.addEventListener('click', noLandingPage);
 
-  // popover
-  function randomString() {
-    let stringArr = [ 'soccer', 'film direction', 'design'],
-        selectString = stringArr[Math.floor(Math.random() * stringArr.length)],
-        selectStringArr = selectString.split('');
-
-    return selectStringArr;
-  }
-
- 
-
   let theSongs = document.querySelector('#love-section'),
       theTemplate = document.querySelector('#bio-template').content,
       faveData;
@@ -42,12 +31,12 @@ import { getData } from "./modules/dataMiner.js";
       let panel = theTemplate.cloneNode(true);
       let containers = panel.firstElementChild.children;
 
-      containers[0].querySelector('img').src= `images/${data[thing].pict}`;
+      containers[0].querySelector('img').src= `images/${data[thing].pic}`;
       containers[0].querySelector('img').id = thing;
       containers[0].querySelector('img').addEventListener("click", showThing);
 
       containers[1].textContent = data[thing].title;
-      containers[2].textContent = data[thing].singer;
+      containers[2].textContent = data[thing].banner;
       containers[3].textContent = data[thing].description;
 
       theSongs.appendChild(panel);
