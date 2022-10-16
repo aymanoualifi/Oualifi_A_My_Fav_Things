@@ -1,4 +1,4 @@
-# Favourite Things
+# My Favourite Things
 
 ## Project Requirements
 
@@ -11,9 +11,9 @@
 ## Contribute
 
 1. Choose my three favourite things
-2. Build a basic web page using HTML/SASS
-3. Create the JSON object that includes my favourite things
-4. Build JS (Popup, Slider, and Audio)
+2. Build a web page using HTML/SASS
+3. Create the JSON object that includes my 3 favourite things
+4. Build JS (Popover, Slider)
 5. Push all folders and files to the GitHub
 
 ## Technologies
@@ -25,4 +25,4 @@
 ## License
 
 MIT
-Copyright © 2022 [Doyeon Kim](https://github.com/Doyeon-k-fanshawe/Fall22_favorite_things)
+Copyright © 2022 [Oualifi_Ayman](https://github.com/aymanoualifi/Oualifi_A_My_Fav_Things)

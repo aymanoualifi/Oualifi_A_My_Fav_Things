@@ -13,7 +13,7 @@
         font-size: 1.6em;
         margin-top: 10px;
         margin-bottom: 10px;
-        color: rgb(105, 66, 3);
+        color: rgb(183, 83, 83);
         // text-transform: uppercase;
     }
     .extraCon h3 {           // painting tagline
@@ -24,7 +24,7 @@
         margin-bottom: 10px;
         // text-transform: uppercase;
         display: grid;
-        color: rgb(105, 66, 3);
+        color: rgb(17, 73, 151);
     }
     .mainArea {
         display: flex;
@@ -45,7 +45,7 @@
         margin-bottom: 10px;
         text-transform: uppercase;
         font-weight: 600;
-        color: rgb(105, 66, 3);          
+        color: rgb(78, 181, 207);          
         // border: 1px solid rgb(27, 25, 25);
         justify-content: center;
     }
@@ -58,7 +58,7 @@
         display: flex;
         font-family: 'Ubuntu', sans-serif;
         font-size: 20px;
-        color: rgb(231, 150, 20);
+        color: rgb(184, 43, 132);
         padding-left: 400px;
         padding-right: 400px;
         padding-top: 15px;    
@@ -94,9 +94,9 @@
         box-sizing: border-box;
         font-family: 'Ubuntu', sans-serif;
         // font-weight: 500;
-        color: rgb(105, 66, 3);
+        color: rgb(27, 103, 59);
         // text-shadow: 0 0.04em 0.04em rgba(0, 0, 0, 0.35);
-        background-color: rgb(231, 150, 20);
+        background-color: rgb(36, 18, 18);
         transition: all 0.15s;
     }
     .mainArea {
@@ -120,7 +120,7 @@
         margin-bottom: 10px;
         text-transform: uppercase;
         font-weight: 600;
-        color: rgb(105, 66, 3);          
+        color: rgb(113, 230, 150);          
         // border: 1px solid rgb(27, 25, 25);
         justify-content: center;
     }
@@ -137,13 +137,13 @@
         margin-bottom: 10px;
         // text-transform: uppercase;
         display: grid;
-        color: rgb(105, 66, 3);
+        color: rgba(140, 136, 129, 0.19);
     }
     .mainArea p {
         display: flex;
         font-family: 'Ubuntu', sans-serif;
         font-size: 20px;
-        color: rgb(231, 150, 20);
+        color: rgb(188, 199, 62);
         padding-left: 15px;
         padding-right: 15px;
         padding-top: 15px;    
@@ -157,6 +157,6 @@
         font-size: 1.4em;
         margin-top: 10px;
         margin-bottom: 10px;
-        color: rgb(105, 66, 3);
+        color: rgb(195, 238, 130);
     }
 }
